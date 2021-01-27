@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table2</title>
+</head>
+<body>
+  <form>
+    <div class="container">
+        <table class="center">
+          <div class="form">
+            <caption> <h1>Please Enter Your Details</h1></caption>
+            <caption> <p>Fill the application form below and submit</p></caption>
+            <tr>
+              <th >Name*</th>
+              <td>
+                <input type="text" id="fname" name="FName" placeholder="First Name">
+                <input type="text" id="fname" name="LName"  placeholder="Last Name">
+              </td>
+            </tr>
+            <tr>
+              <th>E-Mail Address*</th>
+              <td><input type="email" id="email" name="email" placeholder="Mail@example.com"></td>
+            </tr>
+            <tr>
+              <th>Phone Number*</th>
+              <td><input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Phone Number"></td>
+            </tr>
+            <tr>
+                <th>Gender*</th>
+                <td><select name="gender" placeholder="gender">
+                    <option value="-1" selected>Gender</option>
+                    <option value="1">male</option>
+                    <option value="2">female</option>
+                    <option value="3">others</option>
+                  </select></td>
+            </tr>
+            <tr>
+                <th>Citizen*</th>
+                <td>
+                    <select name="country">
+                        <option value="-1" selected>Select Country</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                      </select>
+                </td>
+            </tr>
+            <tr>
+                <th>Date of Birth*</th>
+                <td>
+                    <select name="days">
+                      <option >Days</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                    </select>
+                    <select name="month">
+                        <option >Month</option>
+                        <option value="january">january</option>
+                        <option value="february">february</option>
+                      </select>
+                      <select name="year">
+                        <option>Year</option>
+                        <option value="1998">1998</option>
+                        <option value="1999">1999</option>
+                        <option value="2000">2000</option>
+                      </select>
+                </td>
+            </tr>
+             <th>Address*</th>
+             <td>
+               <table>
+                 <tr>
+                   <td>
+                     <input type="text"  placeholder="Street Address">
+                    <input type="text"  placeholder="Street Line 2">
+                   </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="text"  placeholder="Landmark">
+                     <input type="text"  placeholder="City">
+                    </td>
+                   </tr>
+                   <tr>
+                    <td>
+                      <input type="text"  placeholder="State/Province">
+                     <input type="number"  placeholder="Postal/Zip Code">
+                    </td>
+                   </tr>
+               </table>
+             </td>
+             <tr>
+               <th></th>
+               <td><button type="submit" form="form1" value="Submit">Submit</button></td>
+             </tr>
+          </div>
+          </table>
+      </div>
+  </form>
+ 
+</body>
+</html>
