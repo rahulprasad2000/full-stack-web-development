@@ -108,8 +108,8 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
                    
                     <hr class="mb-6">
                     
-                      <input type="submit" name="submit" id ="register" value="Submit" onclick="myFunction()">
-                    
+                      <input type="submit" name="submit" id ="register" value="Submit">
+                      <input type="reset" value="Reset">
                     
                     </form>
     </div>
