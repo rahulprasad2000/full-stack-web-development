@@ -48,16 +48,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Details</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <!-- <style>
-    table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-th, td {
-  padding: 5px;
-  text-align: left;    
-} -->
-    </style>
 </head>
 <body>
     

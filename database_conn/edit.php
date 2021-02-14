@@ -37,7 +37,7 @@ if(isset($_POST['update'])){
 <form method="POST" action="edit.php?id=<?php echo "$id"?>">
     USERNAME <input type="text" name="username" value=<?php echo "$username" ?> placeholder="Enter your Username" required><br>
     E-MAIL <input type="email" name="email" value=<?php echo "$email" ?> placeholder="Enter your E-mail" required><br>
-    CONTACT <input type="text" name="gender" value=<?php echo "$gender" ?> placeholder="Enter your Gender" required><br>
+    GENDER <input type="text" name="gender" value=<?php echo "$gender" ?> placeholder="Enter your Gender" required><br>
     Select City <select name="city">
         <option value="Dehradun" <?php if($city=="Dehradun"){echo "selected";}?>>Dehradun</option>
         <option value="roorkee" <?php if($city=="roorkee"){echo "selected";}?>>roorkee</option>

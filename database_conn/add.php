@@ -10,11 +10,14 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     $email = $_POST['email'];
     $gender = $_POST['gender'];
     $city = $_POST['cities'];
+    // $branch = $_POST['branch'];
+    // $year = $_POST['year'];
 
     $sql = "INSERT INTO `users` (`username`, `email`, `gender`, `city`) VALUES ('$username', '$email', '$gender', '$city')";
     $result=mysqli_query($conn, $sql);
     if($result){
       $showAlert=true;
+      header('location:details.php');
     }
       else{
         echo "there was an error";
@@ -30,6 +33,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 <body>
 <?php
@@ -41,7 +45,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
   }
 ?>
 <div class="container">
-       <form  method="POST" action="details.php">
+       <form action="add.php" method="POST" >
                   <div class="center">
                     <h1>Registration<h1>
                     <p>Fill up the form with correct values.<p>
@@ -64,7 +68,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
                           </div>
                     </div>
 
-                   
+                    
 
                     <div class="row">
                          <div class="col-25">
@@ -104,7 +108,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
                    
                     <hr class="mb-6">
                     
-                      <input type="submit" name="submit" id ="register" value="Submit">
+                      <input type="submit" name="submit" id ="register" value="Submit" onclick="myFunction()">
                     
                     
                     </form>
